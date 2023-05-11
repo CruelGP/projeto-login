@@ -1,11 +1,11 @@
 @charset "UTF8";
 
 :root
-{--cor01:#F20530;
---cor02:#D9043D;
+{--cor01:#a0033c;
+--cor02:#F2CF63;
 --cor03:#730237;
 --cor04:#172326;
---cor05:#BF7B54;}
+--cor05:#5E0023;}
 
 *
 {margin:0px;
@@ -28,8 +28,8 @@ top:50%;
 left:50%;
 transform: translate(-50%, -50%);
 background-color: white;
-width:250px;
-height:500px;
+width:260px;
+height:520px;
 border-radius: 20px;
 overflow: hidden;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
@@ -47,3 +47,55 @@ main > section#login > div#formulario
 {display: block;
 padding: 10px;}
 
+main > section#login > div#formulario > h1
+{text-align: center;}
+
+main > section#login > div#formulario > form > div.campo
+{display:block;
+border:2px solid var(--cor01);
+width: 100%;
+height: 40px;
+border-radius: 5px;
+margin:5px 0px}
+
+main > section#login > div#formulario > form > div.campo > label
+{display: none}
+
+div.campo > span
+{color: black;}
+
+main > section#login > div#formulario > form > input[type=submit]
+{display:block;
+font-size: 1em;
+margin:05px 0px 05px 0px;
+width: 100%;
+height: 40px;
+background-color: var(--cor03);
+color:white;
+font-weight: bold;
+border-radius: 5px;
+border: none;}
+
+main > section#login > div#formulario > form > input[type=submit]:hover
+{color: var(--cor04);
+background-color: var(--cor02);
+border: 2px solid var(--cor0);}
+
+main > section#login > div#formulario > form > a.botao
+{ display: block;
+text-align: center;
+font-size: 1em;
+font-weight: bold;
+width: 100%;
+height: 40px;
+padding-top: 7px;
+border-radius: 5px;
+text-decoration: none;
+color: white;
+background-color: var(--cor01);}
+
+
+main > section#login > div#formulario > form > a.botao:hover
+{color: var(--cor02);
+background-color: var(--cor04);
+border: 2px solid var(--cor02);}
